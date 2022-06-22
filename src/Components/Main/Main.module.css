@@ -1,0 +1,132 @@
+.main {
+    background-color: #FDF0E9;
+    border: 1px solid #90E149;
+    position: relative;
+    padding-bottom:150px;
+}
+
+.main__categories {
+    max-width: 40%;
+    margin: 80px auto 75px auto;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.main__categories button{
+    font-size:16px;
+    color:#391400;
+    background-color:transparent;
+    border:none;
+    cursor:pointer;
+}
+.main__categories button:active{
+   color:#16CD53;
+}
+.main__cards{
+    display:flex;
+    margin:0 auto;
+    flex-direction: row;
+    justify-content:center;
+    width:84%;
+    max-width:1900px;
+    flex-wrap: wrap;
+}
+
+.main__deleteButton{
+    height:38px;
+    background-color:white;
+    border-radius:10px;
+    border:none;
+    font-size:16px;
+    color:#391400;
+    padding-left:15px;
+    padding-right:15px;
+    width:80px;
+    position:relative;
+    bottom:35px;
+    left:47%;
+    cursor: pointer;
+}
+.main__categories_arrow{
+    display:none;
+}
+.main__uploadButton{
+    background-color:white;
+    box-shadow: 0px 3px 9px 0px rgba(57, 20, 0, 0.08);
+    border:none;
+    width:170px;
+    height:48px;
+    margin:80px auto 0 auto;
+    position: relative;
+    color:#391400;
+    font-size:14px;
+    cursor: pointer;
+left: 50%;
+transform: translate(-50%, 0);
+    
+}
+
+@media (max-width:1040px) {
+   .main__deleteButton{
+    display:none;
+   } 
+   .main__categories_arrow{
+    display:inline-block;
+    position:absolute;
+    right:16px;
+    top:20px;
+   }
+   .main__categories{
+    display:flex;
+    flex-direction:column;
+    max-height:45px;
+    overflow: hidden;
+    position: relative;
+    background-color:white;
+    border:1px solid #F3D1BF;
+    border-radius: 5px;
+    min-height:16px;
+    width:329px;
+    max-width: 100%;
+    margin: 29px auto 0px auto;
+  
+   }
+  .main__categories_active{
+    display:flex;
+    width:329px;
+    flex-direction:column;
+    position: relative;
+    background-color:white;
+    border:1px solid #F3D1BF;
+    border-radius: 5px;
+    min-height:16px;
+    margin: 29px auto 48px auto;
+    width:329px;
+   
+  }
+  .main__categories_active button{
+    font-size:16px;
+    color:#391400;
+    background-color:transparent;
+    border:none;
+    cursor:pointer;
+    border-bottom:1px solid #F3D1BF;
+    padding:14px 0 16px 16px;
+    width:329px;
+    text-align:left;
+
+}
+   .main__categories button{
+    padding:14px 0 16px 16px;
+    width:329px;
+    text-align:left;
+
+   }
+   .main__cards{
+    display:flex;
+    margin:0 auto;
+    width:329px;
+    flex-direction: column;
+   }
+ 
+}
